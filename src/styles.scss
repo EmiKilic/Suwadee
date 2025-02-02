@@ -17,3 +17,23 @@ html {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+  font-family: "CrimsonTextBold";
+  src: url('/assets/fonts/CrimsonText-Bold.ttf');
+}
+
+@font-face {
+  font-family: "CrimsonTextSemiBold";
+  src: url('/assets/fonts/CrimsonText-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: "CrimsonTextRegular";
+  src: url('/assets/fonts/CrimsonText-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Gabarito";
+  src: url('/assets/fonts/Gabarito-VariableFont_wght.ttf');
+}
