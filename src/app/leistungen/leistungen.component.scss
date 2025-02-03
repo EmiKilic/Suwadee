@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 1440px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f4f0;
+    color: #5a4a42;
+}
+
+.container {
+    margin: 40px auto;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+
+}
+
+h1 {
+    text-align: center;
+    color: #523263;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'CrimsonTextBold';
+}
+
+.divider {
+    border-bottom: 2px solid #523263;
+    margin: 20px 0;
+}
+
+.massage {
+    margin-bottom: 20px;
+    height: 300px;
+    border-bottom: 2px solid #A28F84;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.massage h2 {
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #A28F84;
+    margin-bottom: 5px;
+}
+
+.massage p {
+    font-size: 23px;
+    margin-bottom: 5px;
+    color: #221F23;
+    font-weight: 400;
+}
+
+.price {
+    font-weight: bold;
+    color: #A28F84 !important;
+}
+
+.line {
+    border: 1px solid #523263;
+    height: 0px;
+    width: 400px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+}
+
+.example-card {
+    max-width: 1440px;
+    margin: 40px auto;
+    width: 1350px;
+    background-color: #DECDEB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px;
+
+
+    p {
+        color: #341F44;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        margin: 30px;
+        margin-bottom: 0px;
+        line-height: 50px;
+    }
+
+    button {
+        background-color: #523263;
+        color: #F8F3EE;
+        font-size: 20px;
+        padding: 9px;
+        margin: 30px;
+        padding-right: 32px;
+        padding-left: 32px;
+        border-radius: 5px;
+        font-family: 'Gabarito';
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: ease-in-out 0.15s;
+
+
+        &:hover {
+            cursor: pointer;
+            background-color: #F8F3EE;
+            color: #523263;
+
+        }
+    }
+}
