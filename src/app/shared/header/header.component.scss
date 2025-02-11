@@ -4,62 +4,78 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1440px; 
-  margin-top: 10px; 
+  max-width: 1440px;
+  margin-top: 10px;
   position: fixed;
   top: 0px;
   left: 50%;
   transform: translateX(-50%);
 
   .logo-box {
-      img {
-          height: 49px;
-          width: 196px;
-      }
+    h2 {
+      font-size: 40px;
+      font-family: 'CrimsonTextBold';
+      font-weight: 400;
+      letter-spacing: 4px;
+      color: #F8F3EE;
+      margin-bottom: 0px;
+    }
+
+    p {
+      font-size: 12px;
+      margin: 0;
+      color: #F8F3EE;
+      font-family: 'Gantari';
+    }
   }
 
   .mat-toolbar {
-      display: flex;
-      justify-content: space-between;
-      background-color: #341F44;
+    display: flex;
+    justify-content: space-between;
+    background-color: #341F44;
+    height: 100px;
+    width: 98%;
+    padding-left: 10%;
+    padding-right: 10%;
 
-      span {
-          color: #F8F3EE;
-          font-size: 24px;
-          font-family: 'CrimsonTextSemiBold';
-          margin: 0 15px;
-          &:hover {
-              cursor: pointer;
-          }
+    span {
+      color: #F8F3EE;
+      font-size: 24px;
+      font-family: 'CrimsonTextBold';
+      margin: 0 15px;
+      font-weight: 400;
+      &:hover {
+        cursor: pointer;
       }
+    }
   }
 }
 
 .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-  }
-  
-  .hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #F8F3EE;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .hover-underline-animation:hover::after {
-    transform: scaleX(1);
-  }
-  
-  .hover-underline-animation.left::after {
-    transform-origin: bottom right;
-  }
-  
-  .hover-underline-animation.left:hover::after {
-    transform-origin: bottom left;
-  }
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F8F3EE;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+}
+
+.hover-underline-animation.left::after {
+  transform-origin: bottom right;
+}
+
+.hover-underline-animation.left:hover::after {
+  transform-origin: bottom left;
+}

@@ -6,10 +6,11 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { StudiosComponent } from './studios/studios.component';
 import { LeistungenComponent } from './leistungen/leistungen.component';
+import { AboutComponent } from './about/about.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, HeaderComponent, FooterComponent, LandingPageComponent, KontaktComponent, StudiosComponent, LeistungenComponent],
+  imports: [HeaderComponent, AboutComponent, HeaderComponent, FooterComponent, LandingPageComponent, KontaktComponent, StudiosComponent, LeistungenComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

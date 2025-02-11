@@ -1,0 +1,88 @@
+
+.first-part-about {
+    margin-bottom: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    justify-content: space-evenly;
+    position: relative; /* Positions it within the parent */
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+
+    .about-suwadee {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-bottom: 184px;
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 502px;
+
+            h4 {
+                font-size: 18px;
+                color: #A28F84;
+                letter-spacing: 3px;
+                font-weight: normal;
+                display: flex;
+                font-family: 'Gantari';
+                letter-spacing: 8px;
+                justify-content: center;
+            }
+
+            p {
+                font-size: 24px;
+                text-align: justify;
+                font-family: 'Gantari';
+            }
+
+            ul {
+                li {
+                    font-size: 23px;
+                    font-family: 'CrimsonTextSemiBold';
+                }
+            }
+
+            .zitat-container {
+                display: flex;
+
+                img {
+                    height: 70px;
+                    width: auto;
+                }
+
+                .text {
+                    .zitat {
+                        display: flex;
+                        text-align-last: right;
+                        color: #523263;
+                        font-size: 23px;
+                        font-weight: 400;
+                        font-family: 'CrimsonTextSemiBold';
+                    }
+
+                    .autor {
+                        color: #523263;
+                        font-size: 20px;
+                        font-weight: normal;
+                        text-align-last: right;
+                        font-family: 'CrimsonTextRegular';
+                    }
+                }
+            }
+        }
+
+        .img-container {
+            img {
+                width: 502px;
+                height: 627px;
+                object-fit: cover;
+                object-position: right;
+            }
+        }
+    }
+}

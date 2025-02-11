@@ -1,0 +1,122 @@
+$primary-color: #2e1a43;
+$secondary-color: #d6c2eb;
+$text-color: #DECDEB;
+
+footer {
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 40px 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h2 {
+        font-size: 40px;
+        font-family: 'CrimsonTextBold';
+        font-weight: 400;
+        letter-spacing: 4px;
+        color: #DECDEB;
+        margin-bottom: 0px;
+    }
+
+    p {
+        font-size: 12px;
+        margin: 0;
+        color: #DECDEB;
+        font-family: 'Gantari';
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+
+        li {
+            margin: 5px 0;
+
+            a {
+                color: $text-color;
+                text-decoration: none;
+                font-family: 'CrimsonTextBold';
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .btn {
+        background-color: $secondary-color;
+        padding: 10px 20px;
+        border-radius: 2px;
+        text-decoration: none;
+        display: inline-block;
+        color: $primary-color;
+        font-family: 'CrimsonTextBold';
+        font-size: 20px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0;
+
+        li {
+            margin: 5px 0;
+
+            a {
+                color: $text-color;
+                text-decoration: none;
+                font-family: 'CrimsonTextBold';
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    bottom: 0px;
+
+    .mat-icon {
+        height: 80px;
+        width: 80px;
+        font-size: 80px;
+    }
+
+
+
+    p {
+        font-family: 'Gantari';
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+}

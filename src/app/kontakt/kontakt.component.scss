@@ -50,7 +50,8 @@ section {
     }
 
     img {
-        height: 460px;
+        height: auto;
         width: 80%;
+        max-width: 1440px;
     }
 }
