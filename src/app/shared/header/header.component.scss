@@ -1,5 +1,5 @@
 header {
-  z-index: 5 !important;
+  z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,75 +7,75 @@ header {
   max-width: 1440px;
   margin-top: 10px;
   position: fixed;
-  top: 0px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
 
-  .logo-box {
-    h2 {
-      font-size: 40px;
-      font-family: 'CrimsonTextBold';
-      font-weight: 400;
-      letter-spacing: 4px;
-      color: #F8F3EE;
-      margin-bottom: 0px;
-    }
-
-    p {
-      font-size: 12px;
-      margin: 0;
-      color: #F8F3EE;
-      font-family: 'Gantari';
-    }
-  }
-
-  .mat-toolbar {
+  .toolbar {
     display: flex;
     justify-content: space-between;
-    background-color: #341F44;
+    align-items: center;
+    background-color: #341f44;
     height: 100px;
     width: 98%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 0 10%;
 
-    span {
-      color: #F8F3EE;
-      font-size: 24px;
-      font-family: 'CrimsonTextBold';
-      margin: 0 15px;
-      font-weight: 400;
-      &:hover {
+
+    .logo-box {
+      cursor: pointer;
+      h2 {
+        font-size: 40px;
+        font-family: 'CrimsonTextBold';
+        font-weight: 400;
+        letter-spacing: 4px;
+        color: #f8f3ee;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: 12px;
+        margin: 0;
+        color: #f8f3ee;
+        font-family: 'Gantari';
+      }
+    }
+
+    .desktop-menu {
+      display: flex;
+
+      span {
+        color: #f8f3ee;
+        font-size: 24px;
+        font-family: 'CrimsonTextBold';
+        margin: 0 15px;
+        font-weight: 400;
         cursor: pointer;
       }
     }
+
+    .mobile-menu {
+      display: none;
+      background-color: transparent;
+      border: none;
+
+      mat-icon {
+        color: #f8f3ee;
+        cursor: pointer;
+      }
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 1024px) {
+      .desktop-menu {
+        display: none;
+        /* Hide Desktop Menu */
+      }
+
+      .mobile-menu {
+        display: block;
+        /* Show Hamburger Icon */
+      }
+
+    }
   }
-}
-
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-}
-
-.hover-underline-animation::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #F8F3EE;
-  transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover::after {
-  transform: scaleX(1);
-}
-
-.hover-underline-animation.left::after {
-  transform-origin: bottom right;
-}
-
-.hover-underline-animation.left:hover::after {
-  transform-origin: bottom left;
 }

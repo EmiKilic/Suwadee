@@ -59,3 +59,19 @@ body {
   font-family: "GantariSemiBold";
   src: url('/assets/fonts/Gantari-SemiBold.ttf');
 }
+
+.mat-mdc-menu-content {
+  background-color: #f8f3ee;
+  border-radius: 0px;
+
+}
+.mat-mdc-menu-item {
+  font-family: 'CrimsonTextBold' !important; /* Change Font */
+  font-size: 24px !important; /* Adjust text size */
+  font-weight: bold !important; /* Make text bold (optional) */
+  color: #341f44 !important; /* Set text color */
+}
+
+.mat-mdc-menu-item:hover {
+  background-color: #e0d7cc !important; /* Light hover effect */
+}
