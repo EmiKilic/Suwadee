@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: flex-start;
     max-width: 1440px;
-    margin: 40px auto;
+    margin: 120px auto;
     background: white;
     border-radius: 8px;
     display: flex;
@@ -34,7 +34,7 @@ h1 {
 
 .massage {
     margin-bottom: 20px;
-    height: 300px;
+    height: auto;
     border-bottom: 2px solid #A28F84;
     display: flex;
     flex-direction: column;
@@ -67,7 +67,7 @@ h1 {
 }
 
 .line {
-    border: 1px solid #DECDEB;
+    border: 1.5px solid #DECDEB;
     height: 0px;
     width: 400px;
 }
@@ -89,7 +89,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     border-radius: 0px;
-
+    text-align: center;
 
     p {
         color: #341F44;
@@ -122,5 +122,70 @@ h1 {
             color: #523263;
 
         }
+    }
+}
+// Responsive Design
+@media (max-width: 1024px) {
+    .title {
+        flex-direction: column;
+        gap: 10px;
+        .line {
+            width: 90% !important;
+        }
+    }
+
+    .massage {
+        padding: 1.5rem;
+    }
+
+    .example-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .massage {
+        padding: 1.2rem;
+    }
+
+    .example-card {
+        padding: 10px;
+
+        p {
+            font-size: 20px;
+            line-height: 35px;
+            margin: 0px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 3%;
+    }
+
+    .massage {
+        padding: 1rem;
+        text-align: center;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .example-card {
+        padding: 1rem;
+        p {
+            font-size: 14px;
+            line-height: 25px;
+        }
+    }
+
+    button {
+        font-size: 12px !important;
     }
 }
