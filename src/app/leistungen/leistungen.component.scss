@@ -48,6 +48,7 @@ h1 {
     font-weight: 400;
     letter-spacing: 8px;
     text-transform: uppercase;
+    font-family: 'Gantari';
     color: #A28F84;
     margin-bottom: 5px;
 }
@@ -57,6 +58,7 @@ h1 {
     margin-bottom: 5px;
     color: #221F23;
     font-weight: 400;
+    font-family: 'Gantari';
 }
 
 .price {
@@ -65,7 +67,7 @@ h1 {
 }
 
 .line {
-    border: 1px solid #523263;
+    border: 1px solid #DECDEB;
     height: 0px;
     width: 400px;
 }
@@ -75,6 +77,7 @@ h1 {
     align-items: center;
     justify-content: space-between;
     max-width: 1440px;
+    width: 100%;
 }
 
 .example-card {
@@ -96,6 +99,7 @@ h1 {
         margin: 30px;
         margin-bottom: 0px;
         line-height: 50px;
+        font-family: 'Gantari';
     }
 
     button {
@@ -107,7 +111,7 @@ h1 {
         padding-right: 32px;
         padding-left: 32px;
         border-radius: 5px;
-        font-family: 'Gabarito';
+        font-family: 'CrimsonTextBold';
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
         transition: ease-in-out 0.15s;
 

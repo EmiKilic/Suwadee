@@ -8,6 +8,14 @@ footer {
     padding: 40px 20px;
     padding-bottom: 10px;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures footer-bottom stays at the bottom */
+    align-items: center;
+    min-height: 400px; /* Adjust based on your footer height */
+    position: relative;
+    margin-top: 200px;
 }
 
 .footer-container {
@@ -102,17 +110,28 @@ footer {
 }
 
 .footer-bottom {
-    margin-top: 20px;
-    text-align: center;
-    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    .mat-icon {
-        height: 80px;
-        width: 80px;
-        font-size: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 10px; /* Pushes it to the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Ensures it's centered */
+    
+    .line {
+        border: 2px solid #DECDEB;
+        height: 450px;
+        margin-bottom: 20px;
     }
 
-
+    img {
+        width: 70px;
+        height: auto;
+        margin-bottom: 10px;
+    }
 
     p {
         font-family: 'Gantari';

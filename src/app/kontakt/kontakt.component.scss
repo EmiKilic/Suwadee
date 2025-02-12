@@ -8,6 +8,28 @@ section {
     background: white;
     border-radius: 8px;
     width: 80%;
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between !important;
+        max-width: 1440px;
+
+        .line {
+            border: 1px solid #DECDEB;
+            height: 0px;
+            width: 350px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #523263;
+            font-size: 48px;
+            font-weight: 400;
+            font-family: 'CrimsonTextBold';
+        }
+    }
+
     h1 {
         font-size: 48px;
         color: #523263;
@@ -28,12 +50,13 @@ section {
         flex-direction: row;
         align-self: flex-start;
         justify-content: space-between;
+
         .studios {
 
             h2 {
                 font-size: 23px;
                 color: #A28F84;
-                font-family: 'CrimsonTextSemiBold';
+                font-family: 'Gantari';
                 font-weight: 400;
                 letter-spacing: 8px;
             }
@@ -43,6 +66,7 @@ section {
                     font-size: 24px;
                     color: black;
                     font-weight: 400;
+                    font-family: 'Gantari';
                     line-height: 1.6;
                 }
             }
@@ -51,7 +75,7 @@ section {
 
     img {
         height: auto;
-        width: 80%;
+        width: 90%;
         max-width: 1440px;
     }
 }

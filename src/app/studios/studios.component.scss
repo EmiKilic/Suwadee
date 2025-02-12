@@ -16,7 +16,7 @@
     max-width: 1440px;
 
     .line {
-        border: 1px solid #523263;
+        border: 1px solid #DECDEB;
         height: 0px;
         width: 500px;
     }
@@ -41,6 +41,7 @@ section {
             font-weight: 400;
             color: #A28F84;
             letter-spacing: 8px;
+            font-family: 'Gantari';
         }
 
         p {
@@ -49,11 +50,12 @@ section {
             color: #221F23;
             margin-bottom: 5px;
             line-height: 1.6;
+            font-family: 'Gantari';
         }
 
         img {
             padding-top: 50px;
-            width: 529px;
+            width: 500px;
             height: 627px;
         }
     }
@@ -79,28 +81,7 @@ section {
         margin: 30px;
         margin-bottom: 0px;
         line-height: 50px;
-    }
-
-    button {
-        background-color: #523263;
-        color: #F8F3EE;
-        font-size: 20px;
-        padding: 9px;
-        margin: 30px;
-        padding-right: 32px;
-        padding-left: 32px;
-        border-radius: 5px;
-        font-family: 'Gabarito';
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-        transition: ease-in-out 0.15s;
-
-
-        &:hover {
-            cursor: pointer;
-            background-color: #F8F3EE;
-            color: #523263;
-
-        }
+        font-family: 'Gantari';
     }
 }
 }
