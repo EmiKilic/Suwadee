@@ -1,24 +1,18 @@
 .first-part-about {
-    margin-bottom: 0px;
     margin: 0px;
     display: flex;
     flex-direction: column;
     max-width: 1440px;
+    margin: 120px auto;
     justify-content: space-evenly;
     position: relative;
+    margin-bottom: 0px !important;
+
     /* Positions it within the parent */
-    left: 50%;
-    top: 80%;
-    transform: translate(-50%, -50%);
-    @media (max-width: 1024px) {
-        top: 115%;
-    }
-    @media (max-width: 768px) {
-        top: 100%;
-    }
     .about-suwadee {
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
         width: 100%;
         margin-bottom: 184px;
 
@@ -99,9 +93,8 @@
             text-align: center;
             margin-bottom: 5vh;
             align-items: center;
-            pad
 
-            .text-container,
+            pad .text-container,
             .img-container {
                 max-width: 90%;
             }
@@ -109,6 +102,7 @@
             .zitat-container {
                 flex-direction: row;
                 margin-bottom: 50px;
+
                 img {
                     width: 40px;
                 }
@@ -122,9 +116,8 @@
                 order: 1;
             }
         }
-        .second {
-            padding-bottom: 50px;
-        }
+
+
     }
 
     @media (max-width: 768px) {
@@ -163,6 +156,7 @@
 
             .zitat-container {
                 flex-direction: column;
+
                 img {
                     width: 50px !important;
                     height: auto !important;

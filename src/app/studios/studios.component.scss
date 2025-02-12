@@ -25,7 +25,7 @@
         h1 {
             text-align: center;
             color: #523263;
-            font-size: clamp(24px, 4vw, 48px); // Scales dynamically
+            font-size: 48px; // Scales dynamically
             font-weight: 400;
             font-family: 'CrimsonTextBold';
         }
@@ -146,7 +146,7 @@
     @media (max-width: 480px) {
         .title {
             h1 {
-                font-size: 22px;
+                font-size: 36px;
             }
         }
 

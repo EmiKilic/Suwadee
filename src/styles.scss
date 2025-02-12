@@ -75,3 +75,19 @@ body {
 .mat-mdc-menu-item:hover {
   background-color: #e0d7cc !important; /* Light hover effect */
 }
+
+// For WebKit Browsers (Chrome, Safari, Edge)
+::-webkit-scrollbar {
+  width: 0px; // Hides scrollbar
+  height: 0px;
+}
+
+// For Firefox
+html {
+  scrollbar-width: none; // Hides scrollbar in Firefox
+}
+
+// For Internet Explorer & Edge
+body {
+  -ms-overflow-style: none; // Hides scrollbar in IE & Edge
+}

@@ -11,15 +11,18 @@ footer {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensures footer-bottom stays at the bottom */
+    justify-content: space-between;
+    /* Ensures footer-bottom stays at the bottom */
     align-items: center;
-    min-height: 400px; /* Adjust based on your footer height */
+    min-height: 400px;
+    /* Adjust based on your footer height */
     position: relative;
     margin-top: 200px;
 }
 
 .footer-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
@@ -34,9 +37,10 @@ footer {
 
 .footer-left {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
     h2 {
         font-size: 40px;
         font-family: 'CrimsonTextBold';
@@ -53,6 +57,25 @@ footer {
         font-family: 'Gantari';
     }
 
+
+    .btn {
+        background-color: $secondary-color;
+        padding: 10px 20px;
+        border-radius: 2px;
+        text-decoration: none;
+        display: inline-block;
+        color: $primary-color;
+        font-family: 'CrimsonTextBold';
+        font-size: 20px;
+    }
+}
+
+.footer-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
     ul {
         list-style: none;
         display: flex;
@@ -67,42 +90,7 @@ footer {
                 color: $text-color;
                 text-decoration: none;
                 font-family: 'CrimsonTextBold';
-                font-size: 20px;
-            }
-        }
-    }
-}
-
-.footer-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    .btn {
-        background-color: $secondary-color;
-        padding: 10px 20px;
-        border-radius: 2px;
-        text-decoration: none;
-        display: inline-block;
-        color: $primary-color;
-        font-family: 'CrimsonTextBold';
-        font-size: 20px;
-    }
-
-    ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding: 0;
-
-        li {
-            margin: 5px 0;
-
-            a {
-                color: $text-color;
-                text-decoration: none;
-                font-family: 'CrimsonTextBold';
+                cursor: pointer;
                 font-size: 20px;
             }
         }
@@ -114,13 +102,20 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 0;
 
     width: 100%;
     position: absolute;
-    bottom: 10px; /* Pushes it to the bottom */
+    bottom: 10px;
+    /* Pushes it to the bottom */
     left: 50%;
-    transform: translateX(-50%); /* Ensures it's centered */
-    
+    transform: translateX(-50%);
+
+    /* Ensures it's centered */
+    @media (max-width: 360px) {
+        bottom: 0px;
+    }
+
     .line {
         border: 2px solid #DECDEB;
         height: 450px;
@@ -131,11 +126,52 @@ footer {
         width: 70px;
         height: auto;
         margin-bottom: 10px;
+        cursor: pointer;
     }
 
     p {
         font-family: 'Gantari';
         font-size: 11px;
         letter-spacing: 2px;
+
+        @media (max-width: 360px) {
+            font-size: 8px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+
+    .footer-bottom {
+        align-items: end;
+
+        .line,
+        img,
+        p {
+            margin-right: 15px;
+        }
+
+        .line {
+            margin-right: 47px;
+        }
+    }
+
+    .footer-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .margin {
+            margin-top: 20px;
+        }
+
+        ul {
+            margin: 0;
+        }
     }
 }

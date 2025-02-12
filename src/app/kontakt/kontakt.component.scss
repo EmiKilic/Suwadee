@@ -42,7 +42,7 @@ section {
         color: #523263;
         font-family: 'CrimsonTextSemiBold';
         font-weight: 400;
-
+        text-align: center;
     }
 
     .section {
@@ -59,6 +59,7 @@ section {
                 font-family: 'Gantari';
                 font-weight: 400;
                 letter-spacing: 8px;
+                text-align: start;
             }
 
             div {
@@ -77,5 +78,82 @@ section {
         height: auto;
         width: 90%;
         max-width: 1440px;
+    }
+}
+
+@media (max-width: 1024px) {
+    section {
+        margin: 0;
+        width: 100%;
+    }
+    .title {
+        flex-direction: column;
+        gap: 10px;
+        .line {
+            width: 100% !important;
+        }
+    }
+    .section {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        margin-left: 30px;
+    }
+
+    .studios {
+        max-width: 90%;
+        padding: 1.5rem;
+    p{
+        font-size: 16px !important;
+    }
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 100% !important;
+        margin: 0;
+    }
+    .title {
+        flex-direction: column;
+        gap: 10px;
+
+        .line {
+            width: 100%;
+        }
+    }
+
+    .section {
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+
+    .studios {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        h1 {
+            font-size: 22px;
+        }
+    }
+
+    .studios {
+        padding: 1rem;
+    }
+
+    .name {
+        font-size: 20px !important;
+    }
+    .section {
+
+        margin-left: 10px;
+    }
+    img {
+        width: 100%;
     }
 }

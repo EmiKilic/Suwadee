@@ -158,15 +158,25 @@ h1 {
         }
     }
 }
+@media (max-width: 550px) {
+    h1 {
+        font-size: 36px;
+    }
 
+    .title {
+        margin-top: 120px;
+    }
+}
 @media (max-width: 480px) {
     .container {
         padding: 0 3%;
     }
 
+    
+
     .massage {
         padding: 1rem;
-        text-align: center;
+        text-align: start;
 
         h2 {
             font-size: 20px;
