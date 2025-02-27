@@ -87,7 +87,6 @@ section {
         width: 100%;
     }
     .title {
-        flex-direction: column;
         gap: 10px;
         .line {
             width: 100% !important;
@@ -115,7 +114,6 @@ section {
         margin: 0;
     }
     .title {
-        flex-direction: column;
         gap: 10px;
 
         .line {
@@ -138,7 +136,7 @@ section {
 @media (max-width: 480px) {
     .title {
         h1 {
-            font-size: 22px;
+            font-size: 40px !important;
         }
     }
 

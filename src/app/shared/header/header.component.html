@@ -8,7 +8,7 @@
 
         <!-- Desktop Menu -->
         <div class="desktop-menu">
-            <span class="hover-underline-animation left">Leistungen</span>
+            <span class="hover-underline-animation left" (click)="scrollToLeistungen()">Leistungen</span>
             <span class="hover-underline-animation left">Standorte</span>
             <span class="hover-underline-animation left">Terminvereinbarung</span>
         </div>
@@ -16,7 +16,7 @@
         <!-- Mobile Menu Button -->
         <button mat-button [matMenuTriggerFor]="menu" class="mobile-menu"><mat-icon>menu</mat-icon></button>
         <mat-menu #menu="matMenu" panelClass="custom-menu" style="background: black;">
-            <button mat-menu-item>Leistungen</button>
+            <button mat-menu-item (click)="scrollToLeistungen()">Leistungen</button>
             <button mat-menu-item>Standorte</button>
             <button mat-menu-item>Terminvereinbarung</button>
         </mat-menu>

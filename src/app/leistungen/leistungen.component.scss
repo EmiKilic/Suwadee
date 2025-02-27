@@ -1,9 +1,10 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     max-width: 1440px;
-    margin: 120px auto;
+    width: 100% !important;
+    margin: 0px auto;
     background: white;
     border-radius: 8px;
     display: flex;
@@ -34,7 +35,7 @@ h1 {
 
 .massage {
     margin-bottom: 20px;
-    height: auto;
+    height: 250px;
     border-bottom: 2px solid #A28F84;
     display: flex;
     flex-direction: column;
@@ -50,7 +51,7 @@ h1 {
     text-transform: uppercase;
     font-family: 'Gantari';
     color: #A28F84;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .massage p {
@@ -59,23 +60,26 @@ h1 {
     color: #221F23;
     font-weight: 400;
     font-family: 'Gantari';
+    margin-top: 0px ;
+    line-height: 170%;
 }
 
 .price {
     font-weight: bold;
     color: #A28F84 !important;
+    margin-bottom: 15px !important;
 }
 
 .line {
     border: 1.5px solid #DECDEB;
     height: 0px;
-    width: 400px;
+    width: 264px;
 }
 
 .title {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 1440px;
     width: 100%;
 }
@@ -127,10 +131,9 @@ h1 {
 // Responsive Design
 @media (max-width: 1024px) {
     .title {
-        flex-direction: column;
         gap: 10px;
         .line {
-            width: 90% !important;
+            width: 20% !important;
         }
     }
 
@@ -146,6 +149,17 @@ h1 {
 @media (max-width: 768px) {
     .massage {
         padding: 1.2rem;
+        height: auto;
+
+    }
+    .title {
+        gap: 10px;
+        .line {
+            width: 52px !important;
+        }
+    }
+    .container {
+     margin: 0px;
     }
 
     .example-card {
@@ -163,16 +177,21 @@ h1 {
         font-size: 36px;
     }
 
-    .title {
-        margin-top: 120px;
-    }
 }
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     .container {
         padding: 0 3%;
     }
 
-    
+    .title {
+        gap: 10px;
+        .line {
+            width: 28px !important;
+        }
+        h1 {
+            font-size: 40px !important;
+        }
+    }
 
     .massage {
         padding: 1rem;

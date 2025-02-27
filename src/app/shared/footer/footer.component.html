@@ -10,7 +10,7 @@
         <div class="footer-right">
             
             <ul class="margin">
-                <li><a href="#">Leistungen</a></li>
+                <li><a (click)="scrollToLeistungen()">Leistungen</a></li>
                 <li><a href="#">Standorte</a></li>
                 <li><a href="#">Terminvereinbarung</a></li>
             </ul>
@@ -22,7 +22,7 @@
     </div>
     <div class="footer-bottom">
         <div class="line"></div>
-        <img src="assets/landingPage/arrow.png" alt="">
+        <img (click)="scrollToTop()" src="assets/landingPage/arrow.png" alt="">
         <p>COPYRIGHT 2024 SUWADEE TRADITIONELLE THAIMASSAGE</p>
     </div>
 </footer>

@@ -16,13 +16,17 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #341f44;
-    height: 100px;
-    width: 98%;
-    padding: 0 10%;
+    height: 123px;
+    width: 95%;
+    padding: 0 5%;
 
 
     .logo-box {
       cursor: pointer;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       h2 {
         font-size: 40px;
         font-family: 'CrimsonTextBold';
@@ -37,6 +41,7 @@ header {
         margin: 0;
         color: #f8f3ee;
         font-family: 'Gantari';
+        height: 20px;
       }
     }
 
