@@ -4,18 +4,25 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSidenav } from '@angular/material/sidenav';
-import {MatMenuModule} from '@angular/material/menu';
-import { RouterLink } from '@angular/router';
-
+import { MatMenuModule } from '@angular/material/menu';
+import { RouterLink, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatMenuModule, RouterLink],
+  imports: [
+    CommonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatMenuModule,
+    RouterLink,
+  ],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  constructor(private router: Router) {}
 
   @ViewChild('sidenav') sidenav!: MatSidenav;
 
@@ -28,41 +35,53 @@ export class HeaderComponent {
   }
 
   scrollToLeistungen() {
-    const element = document.getElementById('leistungen');
-    if (element) {
-      const offset = -150; // Adjust this value to add extra space (negative moves up)
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY + offset;
-  
-      window.scrollTo({
-        top: elementPosition,
-        behavior: 'smooth'
-      });
-    }
+    this.router.navigate(['/']).then(() => {
+      setTimeout(() => {
+        const element = document.getElementById('leistungen');
+        if (element) {
+          const offset = -150; // Move up 150px
+          const elementPosition =
+            element.getBoundingClientRect().top + window.scrollY + offset;
+          window.scrollTo({
+            top: elementPosition,
+            behavior: 'smooth',
+          });
+        }
+      }, 100); // Delay ensures the component is loaded before scrolling
+    });
   }
 
   scrollToStandorte() {
-    const element = document.getElementById('standorte');
-    if (element) {
-      const offset = -150; // Adjust this value to add extra space (negative moves up)
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY + offset;
-  
-      window.scrollTo({
-        top: elementPosition,
-        behavior: 'smooth'
-      });
-    }
+    this.router.navigate(['/']).then(() => {
+      setTimeout(() => {
+        const element = document.getElementById('standorte');
+        if (element) {
+          const offset = -150; // Move up 150px
+          const elementPosition =
+            element.getBoundingClientRect().top + window.scrollY + offset;
+          window.scrollTo({
+            top: elementPosition,
+            behavior: 'smooth',
+          });
+        }
+      }, 100); // Delay ensures the component is loaded before scrolling
+    });
   }
 
   scrollToTermin() {
-    const element = document.getElementById('terminvergabe');
-    if (element) {
-      const offset = -150; // Adjust this value to add extra space (negative moves up)
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY + offset;
-  
-      window.scrollTo({
-        top: elementPosition,
-        behavior: 'smooth'
-      });
-    }
+    this.router.navigate(['/']).then(() => {
+      setTimeout(() => {
+        const element = document.getElementById('terminvergabe');
+        if (element) {
+          const offset = -150; // Move up 150px
+          const elementPosition =
+            element.getBoundingClientRect().top + window.scrollY + offset;
+          window.scrollTo({
+            top: elementPosition,
+            behavior: 'smooth',
+          });
+        }
+      }, 100); // Delay ensures the component is loaded before scrolling
+    });
   }
 }

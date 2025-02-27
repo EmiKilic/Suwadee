@@ -13,4 +13,6 @@ import { KontaktComponent } from '../kontakt/kontakt.component';
 })
 export class HomeComponent {
 
+
+
 }

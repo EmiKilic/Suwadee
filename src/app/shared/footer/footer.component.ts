@@ -1,55 +1,70 @@
-import { Component } from '@angular/core';
-import {MatIconModule} from '@angular/material/icon';
-import { RouterLink, } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { RouterLink, Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
-  imports: [MatIconModule, RouterLink],
+  standalone: true,
+  imports: [MatIconModule, RouterLink, MatMenuModule],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  styleUrl: './footer.component.scss',
 })
 export class FooterComponent {
+  private router = inject(Router);
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   scrollToLeistungen() {
-    const element = document.getElementById('leistungen');
-    if (element) {
-      const offset = -150; // Adjust this value to add extra space (negative moves up)
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY + offset;
-  
-      window.scrollTo({
-        top: elementPosition,
-        behavior: 'smooth'
-      });
-    }
+    this.router.navigate(['/']).then(() => {
+      setTimeout(() => {
+        const element = document.getElementById('leistungen');
+        if (element) {
+          const offset = -150; // Move up 150px
+          const elementPosition =
+            element.getBoundingClientRect().top + window.scrollY + offset;
+          window.scrollTo({
+            top: elementPosition,
+            behavior: 'smooth',
+          });
+        }
+      }, 100); // Delay ensures the component is loaded before scrolling
+    });
   }
 
   scrollToStandorte() {
-    const element = document.getElementById('standorte');
-    if (element) {
-      const offset = -150; // Adjust this value to add extra space (negative moves up)
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY + offset;
-  
-      window.scrollTo({
-        top: elementPosition,
-        behavior: 'smooth'
-      });
-    }
+    this.router.navigate(['/']).then(() => {
+      setTimeout(() => {
+        const element = document.getElementById('standorte');
+        if (element) {
+          const offset = -150; // Move up 150px
+          const elementPosition =
+            element.getBoundingClientRect().top + window.scrollY + offset;
+          window.scrollTo({
+            top: elementPosition,
+            behavior: 'smooth',
+          });
+        }
+      }, 100); // Delay ensures the component is loaded before scrolling
+    });
   }
 
   scrollToTermin() {
-    const element = document.getElementById('terminvergabe');
-    if (element) {
-      const offset = -150; // Adjust this value to add extra space (negative moves up)
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY + offset;
-  
-      window.scrollTo({
-        top: elementPosition,
-        behavior: 'smooth'
-      });
-    }
+    this.router.navigate(['/']).then(() => {
+      setTimeout(() => {
+        const element = document.getElementById('terminvergabe');
+        if (element) {
+          const offset = -150; // Move up 150px
+          const elementPosition =
+            element.getBoundingClientRect().top + window.scrollY + offset;
+          window.scrollTo({
+            top: elementPosition,
+            behavior: 'smooth',
+          });
+        }
+      }, 100); // Delay ensures the component is loaded before scrolling
+    });
   }
 }
