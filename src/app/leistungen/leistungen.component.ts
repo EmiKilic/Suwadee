@@ -15,4 +15,18 @@ import { MatButtonModule } from '@angular/material/button';
   templateUrl: './leistungen.component.html',
   styleUrl: './leistungen.component.scss',
 })
-export class LeistungenComponent {}
+export class LeistungenComponent {
+  scrollToTermin() {
+    const element = document.getElementById('terminvergabe');
+    if (element) {
+      const offset = -150; // Adjust this value to add extra space (negative moves up)
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY + offset;
+
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth',
+      });
+    }
+  }
+}
