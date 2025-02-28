@@ -1,0 +1,25 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 150px;
+    max-width: 1440px;
+
+    h1 {
+        font-size: 40px;
+        font-weight: 400;
+        font-family: 'CrimsonTextBold';
+        color: #523263;
+    }
+
+    p {
+        font-family: 'Gantari';
+        font-size: 23px;
+        line-height: 170%;
+        align-items: flex-start;
+        text-align: justify;
+    }
+}

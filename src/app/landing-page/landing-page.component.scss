@@ -49,6 +49,7 @@
     }
     p {
         font-size: 18px;
+        letter-spacing: 2px;
         color: #DECDEB;
         font-family: 'Gantari';
     }
@@ -56,6 +57,9 @@
     h2 {
         font-weight: bold;
         font-size: 48px;
+        margin: 0px;
+        margin-bottom: 33px;
+        margin-top: 15px;
         color: #FFFFFF;
         font-family: 'CrimsonTextBold';
     }
@@ -65,9 +69,10 @@
         color: #341F44;
         font-size: 20px;
         padding: 9px;
+        height: 48px;
         padding-right: 32px;
         padding-left: 32px;
-        border-radius: 5px;
+        border-radius: 3px;
         font-family: 'CrimsonTextBold';
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 
@@ -86,7 +91,7 @@
 
     .line {
         position: absolute;
-        width: 4px;
+        width: 3px;
         height: 400px;
         background-color: #DECDEB;
         bottom: -130px;
